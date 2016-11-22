@@ -1,0 +1,13 @@
+<header>
+  <div class="logo-header">
+    <%= link_to image_tag('lnb-logo.png', alt: 'Logo Liserre Najjar e Bicudo'), :root %>
+    <a class="facebook hide-for-small-only" href="https://www.facebook.com/LNBAdv"><%= image_tag('facebookbutton.png', alt: 'Facebook') %></a>
+  </div>
+  <div class="sidebar-menu show-for-small-only">
+    <div class="large-6 medium-5 columns menu-container">
+      <%=
+      render 'menu'
+      %>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,157 @@
+@import 'foundation_and_overrides';
+
+.content-container {
+  .intro-board {
+    height: 22rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .atuaction, .about, .team, .contacts-container {
+    padding: 4rem 1rem;
+
+
+    h1, h2 {
+      font-size: 1.8rem;
+      padding: 2rem 0;
+      color: darken($dark-gray, 20%) !important;
+      font-weight: bold;
+    }
+
+    strong {
+      color: $primary-color;
+    }
+
+    p {
+      padding: 1rem 0;
+      text-align: justify;
+    }
+  }
+
+  .team ul {
+    padding: 2rem 4rem;
+    text-align: center;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .content, .atuaction, .about, .team, .contacts-container {
+    font-size: 1rem;
+    color: darken($dark-gray, 25%);
+
+    p {
+      line-height: 26px;
+    }
+
+    h1, h2 {
+      font-size: 2rem;
+      color: $primary-color;
+      font-weight: bold;
+
+      @include breakpoint(small only) {
+        text-align: center;
+      }
+    }
+  }
+
+  .content .intro {
+    padding: 5rem 1rem 2rem;
+    text-align: justify;
+  }
+
+  .content .rss {
+    padding: 3rem 1rem 5rem;
+
+    a {
+      color: $blue;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: $dark-gray;
+      padding-bottom: 1.8rem;
+    }
+
+    h3 {
+      color: $dark-gray;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    li {
+      margin: 1rem 0 0;
+    }
+
+    .more {
+      text-transform: uppercase;
+      color: $dark-gray;
+      font-weight: bold;
+    }
+  }
+
+  .content .rss .notice-fist {
+    padding-left: 0;
+  }
+
+  .content .rss .notice-second {
+    border-left: solid 1px $dark-gray;
+    padding-left: 2rem;
+
+    @include breakpoint(small only) {
+      border-left: none;
+      padding-left: 0;
+      margin-top: 3rem;
+    }
+  }
+
+  .contacts-container {
+
+  }
+
+  .phone {
+    padding-left: 0;
+  }
+
+  .cellphone {
+    padding-right: 0;
+  }
+
+  .field {
+    padding-bottom: 2rem;
+
+    label {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: darken($dark-gray, 16%);
+    }
+  }
+
+  .info-contact {
+    font-size: 1rem;
+    color: darken($dark-gray, 16%);
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    strong {
+      color: darken($dark-gray, 20%);
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}

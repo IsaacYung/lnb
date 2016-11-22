@@ -1,0 +1,48 @@
+@import 'foundation_and_overrides';
+
+.logo-header {
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: $primary-color;
+
+  .facebook {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+  }
+}
+
+.show-menu {
+  left: 0 !important;
+}
+
+.menu-header {
+  padding: 1rem 0;
+  height: 4.5rem;
+  width: 38rem;
+  background-color: $secondary-color;
+
+  -webkit-border-bottom-right-radius: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -moz-border-radius-bottomright: 30px;
+  -moz-border-radius-bottomleft: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  .menu {
+    font-size: 1rem;
+    padding-left: 3rem;
+
+    li {
+      text-align: center;
+    }
+
+    a {
+      color: $white;
+    }
+
+    a:hover {
+      color: $light-gray;
+    }
+  }
+}

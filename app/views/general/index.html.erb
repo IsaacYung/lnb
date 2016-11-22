@@ -1,0 +1,29 @@
+<%= render 'menu' %>
+<section class="content row">
+  <div class="intro columns">
+    <h1>Liserre, Najjar e Bicudo</h1>
+    <p>
+      é um escritório de advocacia dedicado ao atendimento de empresas e pessoas
+      físicas. Nossa proposta é a prevenção. tentando evitar ou amenizar as contingências que se revelam no dia a dia da vida em sociedade.
+    </p>
+    <p>
+      Prezamos pela transparência e aplicação de principios éticos e morais, com amplo conhecimento e uma equipe de profissionais qualificados para atingir os melhores resultados.
+    </p>
+  </div>
+  <hr>
+  <div class="rss columns">
+    <h2>Notícias</h2>
+    <div>
+      <div class="notice-fist columns medium-6">
+        <h3>STF</h3>
+        <%= feed_news @feed_stf %>
+        <a target="_blank" class="more" href="http://www.stf.jus.br/portal/principal/principal.asp">Veja Mais</a>
+      </div>
+      <div class="notice-second columns medium-6">
+        <h3>STJ</h3>
+        <%= feed_news @feed_stj %>
+        <a target="_blank" class="more" href="http://stjnoticias.tumblr.com/">Veja Mais</a>
+      </div>
+    </div>
+  </div>
+</section>

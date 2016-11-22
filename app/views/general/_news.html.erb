@@ -1,0 +1,8 @@
+<ul class="no-bullet">
+  <% for i in 0..5 %>
+    <li>
+      <time><%= @feed.entries[i].published.strftime('%d/%m/%y %H:%M') %></time>
+      <h4><a target="_blank" href="<%= @feed.entries[i].url %>"><%= @feed.entries[i].title %></a></h4>
+    </li>
+  <% end %>
+</ul>

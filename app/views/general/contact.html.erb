@@ -1,0 +1,69 @@
+<% title 'Contato' %>
+<%= render 'menu' %>
+<div class="contacts-container row">
+  <h1>Contato</h1>
+  <div class="form-contact columns medium-6">
+    <% if flash[:notice] %>
+      <div class="notice text-center">
+        <%= flash[:notice] %>
+      </div>
+    <% else %>
+      <%= form_for @message do |f| %>
+        <div class="field">
+          <%= f.label :name, 'Nome:' %>
+          <%= f.text_field :name, placeholder: "Seu nome" %>
+        </div>
+        <div class="field">
+          <%= f.label :email, 'E-mail:' %>
+          <%= f.text_field :email, placeholder: "Seu e-mail" %>
+        </div>
+        <div class="field phone columns medium-6">
+          <%= f.label :phone, 'Telefone:' %>
+          <%= f.text_field :phone, data: { mask: '(99) 9999-9999' }, placeholder: "(11) 2000-0000" %>
+
+        </div>
+        <div class="field cellphone columns medium-6">
+          <%= f.label :cellphone, 'Celular:' %>
+          <%= f.text_field :cellphone, data: { mask: '(99) 999-999-999' }, placeholder: "(11) 900-000-000" %>
+        </div>
+        <div class="field">
+          <%= f.label :subject, 'Assunto:' %>
+          <%= f.text_field :subject, placeholder: "Assunto" %>
+        </div>
+        <div class="field">
+          <%= f.label :message, 'Mensagem:' %>
+          <%= f.text_area :message, size: '10x9', placeholder: "Descreva a sua dúvida" %>
+        </div>
+        <div class="actions text-right">
+          <%= f.submit 'Enviar Mensagem', class: 'button' %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="info-contact columns medium-6 end">
+    <ul class="no-bullet">
+      <li>
+        <h3>Onde Estamos?</h3>
+        R. Alm. Pereira Guimarães, 327 - Pacaembu<br>
+        São Paulo - SP - CEP: 01250-001<br>
+        <br>
+        R. José Paulino, nº 1.244, 5º Andar<br>
+        Conjunto 52/53 - Centro, Campinas - SP<br>
+        CEP: 13013-001
+        <br>
+      </li>
+      <li>
+        <h3>Telefones</h3>
+        <strong>São Paulo:</strong> (11) 3675-7304 | (11) 2507-7075<br>
+        <strong>Campinas:</strong> (19) 3233-5999<br>
+      </li>
+      <li>
+        <h3>E-mail</h3>
+        lnb@lnb.adv.br
+      </li>
+    </ul>
+    <div class="">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.3987887148617!2d-46.672836150946964!3d-23.548359751953544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce578995c5c9bb%3A0x27d633bc929f2fa!2sR.+Alm.+Pereira+Guimar%C3%A3es%2C+327+-+Pacaembu%2C+S%C3%A3o+Paulo+-+SP%2C+01250-001!5e0!3m2!1spt-BR!2sbr!4v1478528304264" height="600" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+@import 'foundation_and_overrides';
+
+footer {
+ .footer-container {
+   padding: 2rem 0;
+   background-color: $light-gray;
+
+   h4 {
+     color: $primary-color;
+   }
+
+   a {
+     color: darken($dark-gray, 25%);
+
+     &:hover {
+       font-weight: bold;
+     }
+   }
+
+   @include breakpoint(small only) {
+     text-align: center;
+   }
+ }
+
+ .developer {
+   padding: 1rem 0;
+   color: $axels-color-primary;
+   background-color: $axels-color-secondary;
+
+   a {
+     color: $axels-color-primary;
+     text-decoration: underline;
+   }
+ }
+
+ .address {
+   color: darken($dark-gray, 25%);
+   font-size: 1rem;
+ }
+}
