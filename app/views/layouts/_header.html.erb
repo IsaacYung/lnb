@@ -3,11 +3,18 @@
     <%= link_to image_tag('lnb-logo.png', alt: 'Logo Liserre Najjar e Bicudo'), :root %>
     <a class="facebook hide-for-small-only" href="https://www.facebook.com/LNBAdv"><%= image_tag('facebookbutton.png', alt: 'Facebook') %></a>
   </div>
-  <div class="sidebar-menu show-for-small-only">
-    <div class="large-6 medium-5 columns menu-container">
-      <%=
-      render 'menu'
-      %>
+  <div class="show-for-small-only">
+    <div class="mobile-menu text-center">
+      Menu
     </div>
+  </div>
+  <div class="sidebar-menu show-for-small-only">
+    <ul class="no-bullet menu-mobile-container">
+      <li><%= link_to 'Home', :root %></li>
+      <li><%= link_to 'Atuação', :atuaction %></li>
+      <li><%= link_to 'Quem Somos', :about %></li>
+      <li><%= link_to 'Nossa Equipe', :team %></li>
+      <li><%= link_to 'Contato', :contact %></li>
+    </ul>
   </div>
 </header>
