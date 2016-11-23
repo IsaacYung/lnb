@@ -1,3 +1,3 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'site@lnb.adv.br'
+  default from: 'site@lnb.kinghost.net'
 end

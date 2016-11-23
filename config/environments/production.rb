@@ -38,10 +38,10 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'www.lnb.adv.br' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address              => 'smtp.lnb.adv.br',
+    :address              => 'smtp.lnb.kinghost.net',
     :port                 => 587,
-    :domain               => 'lnb.adv.br',
-    :user_name            => 'site@lnb.adv.br',
+    :domain               => 'lnb.kinghost.net',
+    :user_name            => 'site@lnb.kinghost.net',
     :password             => '7LdO0757',
     :authentication       => :plain,
     :enable_starttls_auto => false,
