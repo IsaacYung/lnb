@@ -35,7 +35,7 @@ Rails.application.configure do
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
 
-  config.action_mailer.default_url_options = { :host => 'lnb.adv.br' }
+  config.action_mailer.default_url_options = { :host => 'www.lnb.adv.br' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address              => 'smtp.lnb.adv.br',
