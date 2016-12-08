@@ -2,7 +2,7 @@ class GeneralController < ApplicationController
   def index
     xml = Faraday.get("http://www.oabsp.org.br/noticias/").body
     @feed_stf = Feedjira::Feed.fetch_and_parse "http://www.stf.jus.br/portal/RSS/noticiaRss.asp?codigo=1"
-    @feed_stj = Feedjira::Feed.fetch_and_parse "http://stjnoticias.tumblr.com/rss"
+    @feed_stj = Feedjira::Feed.fetch_and_parse "http://feeds.feedburner.com/STJNoticias?format=xml"
   end
 
   def contact

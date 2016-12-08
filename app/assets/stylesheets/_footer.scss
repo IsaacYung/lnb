@@ -3,10 +3,12 @@
 footer {
  .footer-container {
    padding: 2rem 0;
+   font-size: 0.9rem;
    background-color: $light-gray;
 
    h4 {
      color: $primary-color;
+     font-size: 1.1rem;
    }
 
    a {
@@ -24,6 +26,7 @@ footer {
 
  .developer {
    padding: 1rem 0;
+   font-size: 0.9rem;
    color: $axels-color-primary;
    background-color: $axels-color-secondary;
 
@@ -35,6 +38,6 @@ footer {
 
  .address {
    color: darken($dark-gray, 25%);
-   font-size: 1rem;
+   font-size: 0.9rem;
  }
 }
